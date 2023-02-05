@@ -1,0 +1,28 @@
+Main differences:
+* The interface can have only public static final variables, on the other hand abstract classes may contain variables with different visibility.
+* The abstract class can have member variables that are inherited, something that cannot be done in the interface.
+* The interface cannot has constructor, the abstract classes has one (default constructor) or more constructors.
+* Methods of the abstract class can have any visibility and can have defined implementation.
+    NOTE: [since Java 8] Interfaces can contain default methods, in other words methods with implementation (mostly for backward compatibility) -> KEYWORD: default
+    NOTE: [since Java 8] static methods are allowed
+    NOTE: [since Java 9] An interface can also contain private methods (commonly used when two default methods in an interface share common code)
+
+Abstract class:
+* Abstract classes are similar to interfaces. You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation.
+* However, with abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods.
+* The Abstract class can extend only one parent class but it can implement multiple interfaces.
+* When an abstract class is subclassed, the subclass usually provides implementations for all of the abstract methods in its parent class.
+* However if it does not, then the subclass must also be declared abstract.
+SUMMARY: The purpose on an Abstract class is to provide a common definition of a base class that multiple derived classes can share.
+
+Interface:
+* The interface is just the declaration of methods of an class, it is not the implementation.
+* In the interface, we define what kind of operation an object can perform. These operations are defined by the classes that implement the interface.
+* Interfaces form a contract between the class and the outside world, and this contract is enforced at build time by the compiler.
+* You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation. All methods in interfaces are automatically public and abstract.
+* An Interface can extend another interface.
+* Interfaces are more flexible and can deal with a lot more stress on the design of your program than the implementation.
+* By introducing interfaces into your program, you are really introduce points of variation at which you can plug in different implementations for that interface.
+SUMMARY: The interfaces primary purpose is abstraction, decoupling the "what" form the "how".
+
+item not found

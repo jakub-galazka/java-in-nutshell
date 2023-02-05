@@ -1,0 +1,2 @@
+Editor -> Inlay Hints -> Code vision -> Usages -> off
+Editor -> General -> Auto Import -> Java -> Add unambiguous imports on the fly, Optimize imports on the fly -> on

@@ -1,0 +1,32 @@
+Method Overloading:
+* Method return type may or may not be different and that allows us to reuse the same method name
+* Does NOT have anything to do with Polymorphism
+* Usually overloading happens inside a single class, but a method can also be treated as overloaded in the subclass at that class
+  (that is because a subclass inherits one version of the method from the parent class and then the subclass can have another overloaded version of the method)
+
+Method will be considered OVERLOADED if both follow the following rules:
+* Methods must have the same method name
+* Methods must have different parameters
+
+If methods follow the rules above then they may or may not:
+* Have different return types
+* Have different access modifiers
+* Throw different checked or unchecked exceptions
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Method Overriding (annotation: @Override):
+* Means defining a method in a child class that already exists in the parent class with same signature (same name, same arguments)
+* Also known as Runtime Polymorphism and Dynamic Method Dispatch, because the method that is going to be called is decided at runtime by the JVM
+* Only instance method can be overridden
+
+Method will be considered OVERRIDDEN if we follow these rules:
+* It must have same names and same arguments
+* Return type can be a subclass of the return type in parent class (covariant type)
+* It cannot have a lower access modifier: PARENT: protected -> CHILD: public (private not allowed)
+
+There are also some important points about method OVERRIDING to keep in mind:
+* Only inherited methods can be overridden
+* Constructors and private methods cannot be overridden
+* Methods that are final cannot be overridden
+* A subclass can use super.methodName() to call the super class version of an overridden method
