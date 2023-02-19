@@ -10,39 +10,53 @@ public final class _11HashcodeAndEquals {
 
     /*
         Java documentation warn:
-        * If you are using own objects as a key in a Map or as an element in a Set that you should override the equals() and hashcode() methods.
-        * If 2 object compare equal, then their hash codes must be the same which is why you must override the hashcode() method.
-        * How you generate hash codes is pretty much up to you, as long as the same object will always generate the same hashcode.
+        ~ If you are using own objects as a key in a Map or as an element in a Set that you should override:
+          equals() and hashcode() methods.
+        ~ If 2 object compare equal,
+          then their hash codes must be the same which is why you must override the hashcode() method.
+        ~ How you generate hash codes is pretty much up to you,
+          as long as the same object will always generate the same hashcode.
 
         The essence of storing object in a hashed Collection such as HashSet or HashMap:
         Think of the Collection as having a number of buckets to store the object in.
         The hashcode determines which bucket an object is going to go into.
-        Now there is a requirement that any objects that are equal should always have the same hash code and ultimately so that they will then end up in the same bucket.
-        But the opposite is not required, so 2 objets that are equal do not have to have different hash codes.
-        So when we add an object, its hash code tells the Collection which bucket it should go into.
-        Now there may already be objects in that bucket so each is compared to the new object to make sure that it is not already in there.
-        Now because the comparison is preformed using the equals() method, the Collection will only know if it is already there if it is looking into right back or looking in the right bucket.
+        Now there is a requirement that any objects that are equal should always have the same hash code,
+        so that they will then end up in the same bucket.
+        When we add an object, its hash code tells the Collection which bucket it should go into.
+        Now there may already be objects in that bucket so each is compared to the new object
+        to make sure that it is not already in there.
+        Now because the comparison is performed using the equals() method,
+        the Collection will only know if it is already there if it is looking into the right bucket.
         So the hash codes must be the same and equals return true.
-        Now it is of no use for equals returning true if the collection is checking the wrong bucket that is if the hash code for the new object is not the same as an object that is that it is equal to.
     */
 
     @Override
     public int hashCode() {
         return string.hashCode() + 1;
-        // BAD PRACTISE: [only] string.hashCode() -> object should generate different hash code then corresponding string of the name field
+        /*
+            BAD PRACTISE: [only] string.hashCode()
+                -> object should generate different hash code then corresponding string of the name field
+         */
     }
 
     // Rules for equals method: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-
     @Override
     public boolean equals(Object obj) {
-        // return super.equals(obj); -> DEFAULT: referential equality - if both references point to the same object then they are equal, otherwise they are not
+        /*
+            return super.equals(obj);
+                -> DEFAULT: referential equality, if both references point to the same object then they are equal,
+                            otherwise they are not
+         */
 
         // First check if instance is being compared to itself
         if (this == obj) {
             return true;
         }
 
-        // Make sure that subclasses do not compare equal by checking the actual class of the object being compared against the class of the object the method is in
+        /*
+            Make sure that subclasses do not compare equal
+            by checking the actual class of the object being compared against the class of the object the method is in
+         */
         if ((obj == null) || (obj.getClass() != this.getClass())) {
             return false;
         }

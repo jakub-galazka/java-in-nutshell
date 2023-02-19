@@ -3,8 +3,10 @@ package com.github.jakub_galazka.java_in_nutshell._1fundamentals;
 public class _7SwitchStatement {
 
     private static void switchStatement(int number) {
-        // switch statement can be used with 4 primitive types: byte, short, int, char
-        // [since Java 7] String in switch is also available
+        /*
+            switch statement can be used with 4 primitive types: byte, short, int, char
+            [since Java 7] String in switch is also available
+         */
         switch (number) {
             case 0:
                 System.out.println("Given number equals to 0");

@@ -1,0 +1,9 @@
+Interface                                                               |   AbstractClass
+------------------------------------------------------------------------------------------------------------------------
+# Variables are always: public static final                             |   # Variables with any visibility
+# No constructor (cannot be instantiated)                               |   # Different constructors (cannot be instantiated)
+# Methods are: public abstract                                          |   # Methods with any visibility
+# [since Java 8] default, static, private methods also available        |
+# Interfaces form a contract between the class and the outside world.   |   # The purpose on an Abstract class is to provide
+  Interfaces are more flexible and can deal with a lot more stress on   |     a common definition of a base class that
+  the design of your program than the implementation.                   |     multiple derived classes can share.

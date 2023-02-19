@@ -16,7 +16,7 @@ public class _12Methods {
         return param1 + param2;
     }
 
-    // Overloading method - to overload a method create a unique method signature -> function(...)
+    // Method Overloading - to overload a method, create a method with the same name and other parameters.
     private static int function(int param1) {
         return param1 * param1;
     }

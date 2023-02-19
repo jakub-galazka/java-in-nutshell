@@ -12,12 +12,11 @@ public class _3LinkedListAndIterator {
      extends AbstractSequentialList<E>
      implements List<E>, Deque<E>, Cloneable, Serializable
 
-     * Uses a doubly-linked list data structure to store the elements.
-     * Maintains insertion order.
-     * Can contain duplicate elements.
-     * Non synchronized.
-     * In Java LinkedList class, manipulation (insert, remove) is fast because no shifting needs to occur.
-     * Can be used as a list, stack or queue.
+     ~ Uses a doubly-linked list data structure to store the elements.
+     ~ Maintains insertion order.
+     ~ Allow duplicate elements.
+     ~ Allow null elements.
+     ~ Can be used as a list, stack or queue.
  */
     private static void linkedList() {
         LinkedList<Integer> linkedList = new LinkedList<>();
@@ -31,16 +30,18 @@ public class _3LinkedListAndIterator {
             java.util
             Interface Iterator<E>
 
-            * Interface that is practiced in order to iterate over a collection of Java object components entirety one by one.
-            * One of the Java cursors, considered the Universal Cursor of Java for the Collection API as it is appropriate for all the classes of the Collection framework.
+            ~ Interface to iterate through a collection of objects one by one.
+            ~ One of the Java cursors, considered the Universal Cursor for the Collection API
+              (as it is appropriate for all the classes of the Collection Framework).
 
             Advantages:
-            * Allows the READ and REMOVE operations.
-            * Can be applied to any of the classes of the Collection framework.
-            * If a user is working with a for loop, they cannot modernize (add / remove) the Collection, whereas, if they use the Iterator, they can simply update the Collection.
+            ~ Allows the READ and REMOVE operations.
+            ~ Applicable to any of the classes of the Collection Framework.
+            ~ Working with a for loop: cannot modernize (add / remove) the Collection.
+              Using the Iterator: can simply update the Collection.
             Disadvantages:
-            * Only preserves the iteration in the forward direction (uni-directional iterator).
-            * In comparison with the Spliterator, Iterator does not support traversing elements in the parallel pattern which implies that Iterator supports only sequential iteration.
+            ~ Only preserves the iteration in the forward direction (uni-directional).
+            ~ Supports only sequential iteration.
         */
         Iterator<Integer> iterator = linkedList.iterator();
         while (iterator.hasNext()) {
@@ -57,11 +58,10 @@ public class _3LinkedListAndIterator {
             public interface ListIterator<E>
             extends Iterator<E>
 
-            * An iterator for lists that allows the programmer to:
-                - Traverse the list in either direction.
-                - Modify the list during iteration.
-                - Obtain the iterator current position in the list.
-            * A ListIterator has no current element, its cursor position always lies between the element that would be returned by a call to previous() and the element that would be returned by a call to next().
+            ~ Allows traverse the list in either direction.
+            ~ Has no current element, its cursor position always lies between
+              the element that would be returned by a call to previous() and
+              the element that would be returned by a call to next().
         */
         ListIterator<Integer> listIterator = linkedList.listIterator();
         while (listIterator.hasNext()) {

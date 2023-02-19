@@ -2,7 +2,6 @@ package com.github.jakub_galazka.java_in_nutshell._4java_collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class _2ArrayListAndBoxing {
 
@@ -12,16 +11,15 @@ public class _2ArrayListAndBoxing {
        extends AbstractList<E>
        implements List<E>, RandomAccess, Cloneable, Serializable
 
-       * Resizable-array implementation of the List interface (like an array, but there is no size limit -> dynamic array).
-       * Initialized by the size. The size is dynamic in the array list, which varies according to the elements getting added or removed from the list.
-       * Maintains insertion order.
-       * Can contain duplicate elements.
-       * Is non synchronized.
-       (Synchronization in Java is the capability to control the access of multiple threads to any shared resource.
-       Java Synchronization is better option where we want to allow only one thread to access the shared resource).
-       * It is required to use the wrapper classes for the primitive types.
-       * Allows random access because the array works on an index basis.
-       * In ArrayList, manipulation (insert, remove) is a little slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
+       ~ Resizable-array implementation of the List interface.
+       ~ The size is dynamic and changes depending on items added or removed from the list
+         (when initialized: a default capacity of 10 is assigned).
+       ~ Maintains insertion order.
+       ~ Allow duplicate elements.
+       ~ Allow null elements.
+       ~ Can be used as a list only.
+       ~ Allows random access (works on an index basis).
+       ~ Requires the use of wrapper classes for primitive types.
     */
     private static void arrayList() {
         ArrayList<String> arrayList = new ArrayList<>();
@@ -48,21 +46,21 @@ public class _2ArrayListAndBoxing {
         Collections.addAll(arrayListOfArray, array);
 
         // Shallow copy - coping Collection but NOT objects inside it
-        // 1. method
-        ArrayList<String> shallowCopyMethod1 = new ArrayList<>(arrayList);
-        // 2. method
-        ArrayList<String> shallowCopyMethod2 = new ArrayList<>();
-        shallowCopyMethod2.addAll(arrayList);
-
-        // TODO: Deep copy - copying Collection and objects inside it
-        List<String> deepCopy = new ArrayList<>(arrayList.size());  // ERROR: IndexOutOfBoundsException -> it set capacity of the array list but initially containing none
-        Collections.copy(deepCopy, arrayList);                      // PARAMETERS: destination, source -> the destination has to have size of source Collection to copy
+        // 1.
+        ArrayList<String> shallowCopy1 = new ArrayList<>(arrayList);
+        // 2.
+        ArrayList<String> shallowCopy2 = new ArrayList<>();
+        shallowCopy2.addAll(arrayList);
 
         // Wrapper classes for primitive types
         ArrayList<Integer> integerArrayList = new ArrayList<>();
-        integerArrayList.add(Integer.valueOf(0));                 // Boxing
-        integerArrayList.add(0);                                    // Autoboxing
-        int unboxedInt = integerArrayList.get(0).intValue();        // Unboxing
-        int autoUnboxedInt = integerArrayList.get(0);               // Auto unboxing
+        // Boxing
+        integerArrayList.add(Integer.valueOf(0));
+        // Autoboxing
+        integerArrayList.add(0);
+        // Unboxing
+        int unboxedInt = integerArrayList.get(0).intValue();
+        // Auto unboxing
+        int autoUnboxedInt = integerArrayList.get(0);
     }
 }

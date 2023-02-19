@@ -2,10 +2,11 @@ package com.github.jakub_galazka.java_in_nutshell._4java_collections;
 
 /*
     Immutable class:
-    * Can not be changed once it is created -> great way to increase encapsulation.
-    * Could be used as a key to a map with no ill effects.
+    ~ Cannot be changed once it is created -> great way to increase encapsulation.
+    ~ Could be used as a key to a map with no ill effects.
 
-    The Strategy for Defining Immutable Objects: https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html
+    The Strategy for Defining Immutable Objects:
+    https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html
  */
 
 import java.util.HashMap;

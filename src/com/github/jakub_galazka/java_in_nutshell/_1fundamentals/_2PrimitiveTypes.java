@@ -23,44 +23,56 @@ public class _2PrimitiveTypes {
         // long -> 64 bits
         long minLongValue = Long.MIN_VALUE;     // -9223372036854775808
         long maxLongValue = Long.MAX_VALUE;     //  9223372036854775807
-        long longValue = 1L;                    // By default, Java consider a whole number as an int type, unless a letter on the end has added
-        // long tooBigIntValueAsLongType = 2147483647_123; -> ERROR: "Integer number too long"
+        long longValue = 1L;
+        /*
+            By default, Java consider a whole number as an int type:
+                long tooBigIntValueAsLongType = 2147483647_123; -> ERROR: "Integer number too long"
+            Unless the letter L on the end has added:
+                long tooBigIntValueAsLongType = 2147483647_123L;
+         */
 
         // ========================================================================================================================================================================================================
 
         // float -> 32 bits (single precision)
         float minFloatValue = Float.MIN_VALUE;      // 1.4E-45
         float maxFloatValue = Float.MAX_VALUE;      // 3.4028235E38
-        float floatValue = 1f;                      // GOOD PRACTISE: f
-        // float floatValue = 5.25; -> ERROR: "Required type: float, Provided: double" -> float floatValue = 5.25f;
+        float floatValue = 1f;
+        /*
+            By default, Java consider a floating points number as a double type:
+                float floatValue = 1.5; -> ERROR: "Required type: float, Provided: double"
+            Unless the letter f on the end has added:
+                float floatValue = 1.5f;
+            The letter f on the end is not required for whole numbers, but it is a GOOD PRACTISE!
+         */
 
         // double -> 64 bits (double precision)
         // IMPORTANT: double is recommended to use because it is more precise and faster to process than float!
         double minDoubleValue = Double.MIN_VALUE;   // 4.9E-324
         double maxDoubleValue = Double.MAX_VALUE;   // 1.7976931348623157E308
-        double doubleValue = 1.0;                   // By default, Java consider a floating points number as a double type (in the same way that int is default for whole numbers)
 
         // ========================================================================================================================================================================================================
 
         maxIntValue += 1; // -2147483648 -> Overflow
         minIntValue += 1; //  2147483647 -> Underflow
 
-        // Casting from default whole number type
+        // Casting from default whole number type (int)
         int intValue = minIntValue / 2;
         byte byteValue = (byte) (minByteValue / 2);
         short shortValue = (short) (minShortValue / 2);
 
-        double underscoreNotation = 1_000_000.2_345_678;    // = 1000000.2345678
-
+        // Whole numbers division
         int integerDivision = 3 / 2;                        // floor(3 / 2) = 1
         double doubleDivision = (double) 3 / 2;             // 3 / 2 = 1.5
+
+        double underscoreNotation = 1_000_000.2_345_678;    // = 1000000.2345678
 
         // ========================================================================================================================================================================================================
 
         // char -> 16 bits (allows to store Unicode characters)
         /*
             Unicode - international encoding standard for use with different languages and scripts,
-            by which each letter, digit or symbol is assigned a unique numeric value that applies across different platforms
+                      by which each letter, digit or symbol is assigned a unique numeric value
+                      that applies across different platforms
          */
         char charValue = 'A';           // "" is for String
         char unicodeChar = '\u0041';    // A

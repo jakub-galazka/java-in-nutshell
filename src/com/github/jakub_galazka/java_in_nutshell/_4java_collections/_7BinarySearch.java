@@ -16,7 +16,8 @@ public class _7BinarySearch {
         The fastest way to find the item in a sorted list.
         It works by checking the element in the mid-point of the list.
         So the method basically plays higher or lower with the list.
-        So if the middle element is greater than the item that we are looking for, then it knows the one we want, must be in the first part of the list.
+        So if the middle element is greater than the item that we are looking for,
+        then it knows the one we want, must be in the first part of the list.
         So the way it does then it preforms a binary search on that half of the list in the same way.
         So the list of elements is reduced to half each time.
      */

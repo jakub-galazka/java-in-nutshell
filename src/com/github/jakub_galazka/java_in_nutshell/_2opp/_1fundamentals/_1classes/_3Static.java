@@ -1,21 +1,21 @@
-package com.github.jakub_galazka.java_in_nutshell._2opp;
+package com.github.jakub_galazka.java_in_nutshell._2opp._1fundamentals._1classes;
 
-public class _10Static {
+public class _3Static {
 
     private static int staticField;
 
     /*
         Static initialization block (SIB):
-        * Static equivalent of constructors
-        * Is only execute once when the class is first loaded into the project
-        * Static final variable must be initialized by the time all static initialization blocks terminate
+        ~ Static equivalent of constructors.
+        ~ Is only execute once when the class is first loaded into the project.
+        ~ Static final variable must be initialized by the time all static initialization blocks terminate.
     */
     static {
         staticField = 0;
         System.out.println("first static initialization block called");
     }
 
-    public _10Static() {
+    public _3Static() {
         System.out.println("constructor called");
     }
 
@@ -28,6 +28,6 @@ public class _10Static {
     public static int getStaticField() { return staticField; }
 
     public static void setStaticField(int staticField) {
-        _10Static.staticField = staticField;
+        _3Static.staticField = staticField;
     }
 }

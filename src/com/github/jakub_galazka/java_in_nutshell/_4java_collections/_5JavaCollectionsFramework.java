@@ -3,16 +3,21 @@ package com.github.jakub_galazka.java_in_nutshell._4java_collections;
 import java.util.*;
 
 /*
-    Java Collections is a framework that provides unified ready-made architecture (set of classes and interfaces) for storing and manipulating the group of objects.
-    Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
-    The Collection represents a single unit of objects, i.e. a group.
+    ~ Java Collections is a framework that provides unified ready-made architecture
+      (set of classes and interfaces) for storing and manipulating the group of objects (collections).
+    ~ Java Collections can achieve all the operations that you perform on a data such as
+      inserting, sorting, searching, manipulating, and deleting.
 
-    Core elements of the Collections framework:
-    * Interfaces - these are the abstract types that represent collections, including the List interface or included is aggregate operations (iterators).
-                   Interfaces allow the framework to be extended. They define methods for all the fundamental operations that really are required for the various collection type.
-    * Implementations - concrete implementations of the interface, like the ArrayList and LinkedList classes.
-    * Algorithms - Java JDK provides a range of polymorphic algorithms that work on Collection objects,
-                   technically speaking on object that implement the Collection interface, and they provide reusable functionality.
+    Core elements of the Collections Framework:
+    ~ Interfaces:
+        - Represents collections, including the List interface and aggregate operations (i.e. iterators).
+        - Allows the framework to be extended.
+        - Defines methods for all the fundamental operations that really are required for the various collection type.
+    ~ Implementations
+        - concrete implementations of the interface, like the ArrayList and LinkedList classes.
+    ~ Algorithms
+        - Java JDK provides a range of polymorphic algorithms that work on Collection objects,
+          technically speaking on object that implement the Collection interface, and they provide reusable functionality.
 
     At the top level of the framework is Collections class:
 
@@ -20,12 +25,15 @@ import java.util.*;
     public class Collections
     extends Object
 
-    * Exposes static methods that either operate on collections such as the Collections.sort() or they also return Collection objects such as the Collections.list().
+    ~ Exposes static methods that either operate on collections such as the Collections.sort()
+      or they also return Collection objects such as the Collections.list().
 
     One of the design goals of the framework was that there should be good interoperability amongst various collections.
-    So not just one's included in the framework, but literally anything that may also be created in the future that is a reasonable representation of a collection.
-    Now that also includes arrays, but arrays themselves couldn't be made part of the framework without changing the Java language.
-    However, the framework does include methods that enable Collection to be moved into arrays and vice versa and additionally methods to allow arrays to be viewed as Collection.
+    So not just one's included in the framework, but literally anything that may also be created in the future
+    that is a reasonable representation of a collection.
+    That also includes arrays, but arrays themselves could not be made part of the framework without changing the Java language.
+    However, the framework does include methods that enable Collection to be moved into arrays and vice versa and
+    additionally methods to allow arrays to be viewed as Collection.
 */
 
 public class _5JavaCollectionsFramework {

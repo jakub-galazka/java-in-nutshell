@@ -10,7 +10,7 @@ public class _10Arrays {
 
         int arrayLength = array.length; // 10
 
-        // Coping Array -> shallow copy (IF: Array of objects) - coping Array but NOT objects inside it
+        // Coping Array -> shallow copy - coping Array but NOT objects inside it (IF: Array of objects)
         int[] arrayCopy = Arrays.copyOf(array, array.length);
     }
 }

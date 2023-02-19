@@ -1,6 +1,6 @@
-package com.github.jakub_galazka.java_in_nutshell._2opp._5nested_classes;
+package com.github.jakub_galazka.java_in_nutshell._2opp._3nested_classes;
 
-public class OuterClass {
+public class _2OuterClass {
 
     private int memberVariable;
     private int field;
@@ -16,7 +16,10 @@ public class OuterClass {
     }
 
     public int scopeAccess() {
-        // The containing class can also access all the methods and fields of a contained class even if they are marked as private
+        /*
+            The containing class can access all the methods and fields of the contained class
+            (even if they are marked as private)
+         */
         NonstaticNestedClass nonstaticNestedClass = new NonstaticNestedClass(0);
         StaticNestedClass staticNestedClass = new StaticNestedClass(0);
         return nonstaticNestedClass.field + staticNestedClass.field;
@@ -32,14 +35,24 @@ public class OuterClass {
         }
     }
 
-    // Nonstatic nested class
-    // Generally nonstatic inner class is private
+    /*
+        Nonstatic nested class
+        GENERAL RULE: nonstatic inner class is private
+     */
     public class NonstaticNestedClass {
 
-        private final int field; // Shadowing field from OuterClass (to refer field from OuterClass -> OuterClass.this.field)
+        /*
+            Shadowing field from OuterClass
+            (to refer field from OuterClass: OuterClass.this.field)
+         */
+        private final int field;
 
         public NonstaticNestedClass(int field) {
-            this.field = field * OuterClass.this.field * memberVariable; // Instances of nonstatic inner class has access to all the methods and fields of the outer class (even those mark as private)
+            /*
+                The nonstatic inner class can access all the methods and fields of the outer class
+                (even if they are marked as private)
+             */
+            this.field = field * _2OuterClass.this.field * memberVariable;
         }
     }
 }

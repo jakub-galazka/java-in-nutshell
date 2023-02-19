@@ -1,7 +1,7 @@
-package com.github.jakub_galazka.java_in_nutshell._2opp;
+package com.github.jakub_galazka.java_in_nutshell._2opp._1fundamentals._1classes;
 
-// scope - refers to the visibility of a class, member or variable (i.e. access modifiers)
-public class _9Scope {
+// Scope - refers to the visibility of a class, member or variable (i.e. access modifiers)
+public class _2Scope {
 
     private final int filed = 0;
 

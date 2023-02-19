@@ -11,10 +11,12 @@ public class _6ComparableAndComparator implements Comparable<_6ComparableAndComp
     private int comparatorSecondValue;
 
     /*
-        The Comparator interface defines a single method called compare.
-        Unlike Comparable the object to be sorted don't have to implement Comparator.
-        Instead, an object of type Comparator can be created with compare method that can sort the object that we're interested in.
-        More than one Comparator can be created, and it allows for objects to be sorted in different ways.
+        Comparator interface:
+        ~ Defines a single method called compare.
+        ~ Unlike Comparable the object to be sorted do not have to implement Comparator.
+          Instead, an object of type Comparator can be created with compare method
+          that can sort the object that we're interested in.
+        ~ More than one Comparator can be created, and it allows for objects to be sorted in different ways.
      */
     public static Comparator<_6ComparableAndComparator> ORDER_FIRST;
     public static Comparator<_6ComparableAndComparator> ORDER_SECOND;

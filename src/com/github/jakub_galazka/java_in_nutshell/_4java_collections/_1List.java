@@ -9,10 +9,10 @@ public class _1List {
         public interface List<E>
         extends Collection<E>
 
-        * List in Java provides the facility to maintain the ordered collection.
-        * It contains the index-based methods to insert, update, delete and search the elements.
-        * Allow the duplicate elements.
-        * Allow the null elements.
+        ~ Provides the facility to maintain the ordered collection.
+        ~ Contains the index-based methods to insert, update, delete and search the elements.
+        ~ Allow duplicate elements.
+        ~ Allow null elements.
     */
     private static void list() {
         // GOOD PRACTISE: using interface types
