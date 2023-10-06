@@ -1,0 +1,5 @@
+%       -> Modulo
+!       -> Negation
+&&, ||  -> Logical operators (checking true / false)
+&, |    -> Bitwise operators
+Ternary operator (inline if-else) -> [conditionExpression] ? [trueExpression] : [falseExpression]

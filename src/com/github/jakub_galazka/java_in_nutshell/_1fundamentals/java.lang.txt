@@ -1,0 +1,4 @@
+java.lang:
+~ Default automatically imported Java package.
+~ Contains the class object that is used to support our classes as well as Integer and Double, etc...
+  and all the fundamental building blocks of a Java program.

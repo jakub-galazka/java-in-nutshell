@@ -1,0 +1,18 @@
+public:
+    (top / member level)
+    The object can be accessed from anywhere, whether it is in the same package or in different one.
+
+package private (no keyword):
+    (top / member level)
+    The object can be accessed ONLY within its own package.
+
+protected:
+    (member level)
+    The object can be accessed within its own package (like package-private) but also in subclasses even if they are in another package.
+
+private:
+    (member level)
+    The object can be accessed ONLY within the class it is declared.
+
+--------------------------------------
+*Top level: classes, interfaces, enums
