@@ -1,0 +1,10 @@
+Static variables:
+~ Every instance of the class shares the same static variable.
+
+Static methode:
+~ Can not access instance methods and instance variables directly.
+~ For operations that do not require any data from an instance of the class.
+
+Instance method:
+~ Belongs to an instance of a class.
+~ Can access instance methods and instance variables directly.

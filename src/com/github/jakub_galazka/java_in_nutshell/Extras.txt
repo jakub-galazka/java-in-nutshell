@@ -1,0 +1,8 @@
+~ A reference to the Sting is exactly the same size as a reference to any other object:
+  https://docs.oracle.com/javase/8/docs/technotes/guides/vm/performance-enhancements-7.html
+
+~ "\r" -> move cursor to next line after click to the console
+
+Enums:
+~ Nested enums are static by default
+~ Enum constants have hashCode() method

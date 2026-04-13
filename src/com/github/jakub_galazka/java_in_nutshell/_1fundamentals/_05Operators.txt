@@ -1,0 +1,37 @@
+Arithmetic Operators
++       -> Addition
+-       -> Subtraction
+*       -> Multiplication
+/       -> Division
+%       -> Modulus (reminder)
+
+++      -> Increment (pre/post)
+--      -> Decrement (pre/post)
+
+Comparison Operators
+==      -> Equal to
+!=      -> Not equal to
+>       -> Greater than
+<       -> Less than
+>=      -> Greater than or equal to
+<=      -> Less than or equal to
+
+Logical Operators
+!       -> Logical NOT
+&&      -> Logical AND (short-circuit)
+||      -> Logical OR (short-circuit)
+^       -> Logical XOR
+
+Bitwise Operators
+~       -> Bitwise NOT
+&       -> Bitwise AND
+|       -> Bitwise OR
+^       -> Bitwise XOR
+
+Ternary Operator (inline if-else)
+<conditionExpression> ? <trueExpression> : <falseExpression>
+
+Special Operators
+.       -> Member access
+::      -> Method reference
+->      -> [Java 8+] Lambda expression

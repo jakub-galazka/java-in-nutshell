@@ -1,0 +1,5 @@
+~ The linked variants of HashMap and HashSet are called LinkedHashMap and LinkedHashSet
+  and the only real difference is that the linked versions maintain insertion order.
+
+~ There are also the sorted versions of the Map and Set interfaces,
+  SortedMap and SortedSet that are implemented in TreeMap and TreeSet.

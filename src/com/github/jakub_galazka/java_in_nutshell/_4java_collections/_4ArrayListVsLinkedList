@@ -1,0 +1,10 @@
+ArrayList                                                   |   LinkedList
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Uses a dynamic array to store the elements.               |   # Uses a doubly-linked list to store the elements.
+  (when initialized: a default capacity of 10 is assigned)  |     (when initialized: an empty list is created)
+# Can be used as a list only.	                            |   # Can be used as a list, stack or queue.
+# The memory location for the elements of is contiguous.	|   # The location for the elements of is NOT contagious.
+# Is better for storing and accessing data.	                |   # Is better for manipulating data.
+# Manipulation (insert, remove) is slower because           |   # Manipulation (insert, remove) is fast because
+  a lot of shifting needs to occur if any element           |     no shifting needs to occur.
+  is inserted / removed.                                    |
