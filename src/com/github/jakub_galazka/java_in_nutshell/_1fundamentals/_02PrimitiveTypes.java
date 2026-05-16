@@ -26,9 +26,9 @@ public class _02PrimitiveTypes {
         long longValue = 1L;
         /*
             By default, Java consider a whole number as an int type:
-                long tooBigIntValueAsLongType = 2147483647_123; -> ERROR: "Integer number too long"
-            Unless the letter L on the end has added:
-                long tooBigIntValueAsLongType = 2147483647_123L;
+                long tooLongIntValueAsLongType = 2147483647_123; -> ERROR: "Integer number too long"
+            Unless the letter L (long) was added at the end:
+                long tooLongIntValueAsLongType = 2147483647_123L;
          */
 
         // ========================================================================================================================================================================================================
@@ -47,15 +47,15 @@ public class _02PrimitiveTypes {
         /*
             By default, Java consider a floating points number as a double type:
                 float floatValue = 1.5; -> ERROR: "Required type: float, Provided: double"
-            Unless the letter f on the end has added:
+            Unless the letter f (float) was added at the end:
                 float floatValue = 1.5f;
-            The letter f on the end is not required for whole numbers, but it is a GOOD PRACTISE!
+            The letter f at the end is not required for whole numbers, but it is a GOOD PRACTISE!
          */
 
         // double -> 64 bits (double precision)
         // IMPORTANT: double is recommended to use because it is more precise and faster to process than float!
         double minDoubleValue = Double.MIN_VALUE;   // 4.9E-324                 (smallest positive nonzero value)
-        minDoubleValue = -Double.MIN_VALUE;         // -1.7976931348623157E308  (largest negative finite value)
+        minDoubleValue = -Double.MAX_VALUE;         // -1.7976931348623157E308  (largest negative finite value)
         double maxDoubleValue = Double.MAX_VALUE;   // 1.7976931348623157E308   (largest positive finite value)
 
         // ========================================================================================================================================================================================================
@@ -91,13 +91,13 @@ public class _02PrimitiveTypes {
         /*
             Unicode - international encoding standard for use with different languages and scripts,
                       by which each letter, digit or symbol is assigned a unique numeric value
-                      that applies across different platforms
+                      that applies across different platforms.
          */
         char charValue = 'A';                   // "" is for String
         char unicodeEscapeSequence = '\u0041';  // A
         /*
             Escape sequence - is a special combination of characters (starting with \)
-                              that tells the compiler to insert a character or action that can’t be typed directly.
+                              that tells the compiler to insert a character or action that cannot be typed directly.
          */
 
         // char values can be increment or decrement (i.e. useful in loops)
