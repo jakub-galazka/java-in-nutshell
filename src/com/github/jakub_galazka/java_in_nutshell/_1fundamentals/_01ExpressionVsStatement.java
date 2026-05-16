@@ -6,14 +6,15 @@ public class _01ExpressionVsStatement {
         int number = 1 + 2;
         /*
             int number = 1 + 2;
-                -> Statement - the complete command to be executed (can include 1 or more expressions)
+                -> Statement - the complete command to be executed
+                               (can include 1 or more expressions).
 
             number = 1 + 2
                 -> Expression - the construct that evaluates to a single value
-                                (consists of: variables, values and operators)
+                                (consists of: variables, values and operators).
           */
 
-        // Expression | Statements
+        // Expression | Statement
         int value = 0;                              // value = 0      | int value = 0;
         boolean isTrue = false;                     // isTrue = false | boolean isTrue = false;
         if (!isTrue) {                              // !isTrue        | if (!isTrue)
