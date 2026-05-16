@@ -5,7 +5,7 @@ public class _07SwitchStatement {
     private static void switchStatement(int number) {
         /*
             switch statement can be used with 4 primitive types: byte, short, int, char
-            [since Java 7] String in switch is also available
+            [Java 7+] String in switch is also available
          */
         switch (number) {
             case 0:
@@ -24,7 +24,7 @@ public class _07SwitchStatement {
 
         // ========================================================================================================================================================================================================
 
-        // [since Java 13] Enhanced switch
+        // [Java 13+] Enhanced switch
         switch (number) {
             case 0 -> System.out.println("Given number equals to 0");
             case 1 -> System.out.println("Given number equals to 1");
