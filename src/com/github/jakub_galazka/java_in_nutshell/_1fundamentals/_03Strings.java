@@ -4,10 +4,10 @@ public class _03Strings {
 
     private static void strings() {
         /*
-            String - class datatype which is treated different from normally class datatype
+            String - class datatype which is treated different from normally class datatype.
             IMPORTANT: strings in Java are immutable!
                        -> cannot change String after it is created
-                          (change: new String is created)
+                          (change: new String is created)!
          */
         String string = "This is a string";
 
@@ -23,7 +23,7 @@ public class _03Strings {
 
         // ========================================================================================================================================================================================================
 
-        // [since Java 15] Text block
+        // [Java 15+] Text block
         System.out.println("A\nB\nC\n");
         System.out.println("""
                 A
