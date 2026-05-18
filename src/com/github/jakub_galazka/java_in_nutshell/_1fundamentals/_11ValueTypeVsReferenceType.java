@@ -1,8 +1,8 @@
 package com.github.jakub_galazka.java_in_nutshell._1fundamentals;
 
-public class _11ReferenceTypeVsValueType {
+public class _11ValueTypeVsReferenceType {
 
-    private static void referenceTypeVsValueType() {
+    private static void valueTypeVsReferenceType() {
         // Value type - holds a value (primitive types)
         // Reference type - holds reference / address to object but not the object itself (i.e. Array)
 
