@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _10Arrays {
 
     private static void arrays() {
-        int[] array = new int[10]; // Array of default values: int -> 0, boolean -> false, Object -> null
+        int[] array = new int[10]; // Array of default values: int -> 0, double -> 0.0, boolean -> false, String / Object -> null
         int[] inlineArrayInitialization = { 0, 1, 2 };
 
         int arrayLength = array.length; // 10
